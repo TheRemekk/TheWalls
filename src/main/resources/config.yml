@@ -1,0 +1,317 @@
+# ----- TheWalls by TheRemekkPlays - Plik konfiguracyjny -----
+
+# ----- USTAWIENIA -----
+
+# Bazowo ustawiana ilość graczy w drużynie oraz na arenie przy tworzeniu areny
+max_players_team: 10
+min_players_arena: 20
+max_players_arena: 40
+
+########### ----- CZAS TRWANIA ETAPÓW ARENY ----- ###########
+arena_counters:
+  starting: 0.5
+  preparation: 10.0
+  combat: 10.0
+  deathmatch: 10.0
+
+########### ----- KOORDYNATY MODELU ARENY ----- ###########
+arena_model:
+  world: 'arena_model'
+  pos_x1: 322
+  pos_y1: 0
+  pos_z1: 81
+  pos_x2: -81
+  pos_y2: 210
+  pos_z2: -81
+
+########### ----- LISTA AREN ----- ###########
+arenas:
+
+########### ----- KOORDYNATY DO TELEPORTOWANIA ----- ###########
+
+arena_coords:
+  lobby:
+    x: 0.5
+    y: 196.0
+    z: 0.5
+    yaw: -270.0
+    pitch: 2.0
+  team1:
+    x: -78.5
+    y: 65.0
+    z: 79.5
+    yaw: -135.0
+    pitch: 0.0
+  team2:
+    x: -78.5
+    y: 65.0
+    z: -78.5
+    yaw: -45.0
+    pitch: 0.0
+  team3:
+    x: 79.5
+    y: 65.0
+    z: -78.5
+    yaw: 45.0
+    pitch: 0.0
+  team4:
+    x: 79.5
+    y: 65.0
+    z: 79.5
+    yaw: 135.0
+    pitch: 0.0
+  team1_dm:
+    x: 315.0
+    y: 149.0
+    z: 6.0
+    yaw: -270.0
+    pitch: 0.0
+  team2_dm:
+    x: 276.0
+    y: 149.0
+    z: -32.0
+    yaw: -360.0
+    pitch: 0.0
+  team3_dm:
+    x: 276.0
+    y: 149.0
+    z: 45.0
+    yaw: -180.0
+    pitch: 0.0
+  team4_dm:
+    x: 237.0
+    y: 149.0
+    z: 6.0
+    yaw: -90.0
+    pitch: 0.0
+  wall_team11:
+    x: -7.0
+    y: 105.0
+    z: 7.0
+    x2: -79.0
+    y2: 65.0
+    z2: 7.0
+  wall_team12:
+    x: -7.0
+    y: 105.0
+    z: 7.0
+    x2: -7.0
+    y2: 65.0
+    z2: 79.0
+  wall_team21:
+    x: -7.0
+    y: 105.0
+    z: -7.0
+    x2: -79.0
+    y2: 65.0
+    z2: -7.0
+  wall_team22:
+    x: -7.0
+    y: 105.0
+    z: -7.0
+    x2: -7.0
+    y2: 65.0
+    z2: -79.0
+  wall_team31:
+    x: 7.0
+    y: 105.0
+    z: -7.0
+    x2: 7.0
+    y2: 65.0
+    z2: -79.0
+  wall_team32:
+    x: 7.0
+    y: 105.0
+    z: -7.0
+    x2: 79.0
+    y2: 65.0
+    z2: -7.0
+  wall_team41:
+    x: 7.0
+    y: 105.0
+    z: 7.0
+    x2: 79.0
+    y2: 65.0
+    z2: 7.0
+  wall_team42:
+    x: 7.0
+    y: 105.0
+    z: 7.0
+    x2: 7.0
+    y2: 65.0
+    z2: 79.0
+  wall_1:
+    x: -80.0
+    y: 0.0
+    z: 80.0
+    x2: -80.0
+    y2: 105.0
+    z2: -80.0
+  wall_2:
+    x: -80.0
+    y: 0.0
+    z: -80.0
+    x2: 80.0
+    y2: 105.0
+    z2: -80.0
+  wall_3:
+    x: 80.0
+    y: 0.0
+    z: -80.0
+    x2: 80.0
+    y2: 105.0
+    z2: 80.0
+  wall_4:
+    x: 80.0
+    y: 0.0
+    z: 80.0
+    x2: -80.0
+    y2: 105.0
+    z2: 80.0
+  wall_high:
+    x: 80.0
+    y: 105.0
+    z: 80.0
+    x2: -80.0
+    y2: 105.0
+    z2: -80.0
+  arena:
+    x: 80.0
+    y: 0.0
+    z: 80.0
+    x2: -80.0
+    y2: 105.0
+    z2: -80.0
+  deathmatch:
+    x: 230.0
+    y: 146.0
+    z: -43.0
+    x2: 335.0
+    y2: 208.0
+    z2: 52.0
+  arena_lobby:
+    x: -20.0
+    y: 193.0
+    z: -20.0
+    x2: 20.0
+    y2: 201.0
+    z2: 20.0
+
+tw_lobby:
+  world: world
+  x: 0.5
+  y: 64.0
+  z: 0.5
+  yaw: 270.0
+  pitch: 0.0
+
+item:
+  thewalls_gui:
+    material: ENCHANTING_TABLE
+    amount: 1
+    name: "&6TheWalls"
+    lore:
+      - "Dołącz do jednej z aren i graj"
+  kits_gui:
+    material: BOOK
+    amount: 1
+    name: "&3Kits"
+    lore:
+      - "Wybierz jedną z klas"
+  arena_players_gui:
+    material: NETHER_STAR
+    amount: 1
+    name: "&3Nawigator"
+    lore:
+      - "Wybierz gracza, którego chcesz poobserwować"
+  arena_lobby:
+    material: CLOCK
+    amount: 1
+    name: "&3Powrót do lobby"
+    lore:
+      - "Kliknij, aby wrócić do lobby"
+  arena_join:
+    material: EMERALD_BLOCK
+    amount: 1
+    name: "&9#1"
+    lore:
+      - "Kliknij, aby dolaczyc do areny X"
+  kit_gornik:
+    material: IRON_PICKAXE
+    amount: 1
+    name: "&2Gornik"
+    lore:
+      - "Kliknij, aby wybrac zestaw gornika!"
+  kit_drwal:
+    material: IRON_AXE
+    amount: 1
+    name: "&2Drwal"
+    lore:
+      - "Kliknij, aby wybrac zestaw drwala!"
+  kit_wojownik:
+    material: IRON_SWORD
+    amount: 1
+    name: "&2Wojownik"
+    lore:
+      - "Kliknij, aby wybrac zestaw wojownika!"
+  kit_lucznik:
+    material: BOW
+    amount: 1
+    name: "&2Lucznik"
+    lore:
+      - "Kliknij, aby wybrac zestaw lucznika!"
+
+item_sets:
+  kit_gornik:
+    - material: STONE_PICKAXE
+      amount: 1
+    - material: COAL
+      amount: 5
+    - material: COOKED_BEEF
+      amount: 10
+  kit_drwal:
+    - material: STONE_AXE
+      amount: 1
+    - material: OAK_WOOD
+      amount: 5
+    - material: COOKED_BEEF
+      amount: 10
+  kit_wojownik:
+    - material: STONE_SWORD
+      amount: 1
+    - material: GOLDEN_APPLE
+      amount: 2
+    - material: COOKED_BEEF
+      amount: 10
+  kit_lucznik:
+    - material: BOW
+      amount: 1
+    - material: ARROW
+      amount: 32
+    - material: COOKED_BEEF
+      amount: 10
+
+# ----- SZANSZA NA DROP ZE STONE'A -----
+# liczba = % szans na wydropienie
+stone_drop:
+  # Węgiel
+  coal_chance: 7.8
+  coal_exp: 3
+  # Ruda żelaza
+  iron_chance: 5.6
+  iron_exp: 2
+  # Ruda złota
+  gold_chance: 4.0
+  gold_exp: 2
+  # Lapis
+  lapis_chance: 2.8
+  lapis_exp: 6
+  # Diament
+  diamond_chance: 1.8
+  diamond_exp: 7
+  # Ancient debris
+  debris_chance: 1.2
+  debris_exp: 5
+  # Sztabka netherite
+  netherite_chance: 0.3
+  netherite_exp: 10

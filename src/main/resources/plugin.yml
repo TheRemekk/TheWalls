@@ -1,0 +1,16 @@
+name: TheWalls
+version: '${project.version}'
+main: org.example.theremekk.thewalls.TheWalls
+api: '1.16.1'
+api-version: '1.16'
+commands:
+  thewalls:
+    description: Glowna komenda TheWalls
+    aliases: [tw]
+  team:
+    description: Wybierz druzyne od <1-4>
+  lobby:
+    description: Teleportuje gracza do lobby
+  setlobby:
+    description: Ustawia lobby
+
